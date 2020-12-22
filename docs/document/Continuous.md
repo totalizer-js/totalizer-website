@@ -1,4 +1,4 @@
-# 连续动画
+# Continuous
 
 Demo
 
@@ -7,12 +7,9 @@ Demo
 </ClientOnly>
 
 ``` javascript
-// 创建一个动画迭代器
 const t = new Totalizer();
 const el = document.getElementById("div");
 
-// 添加多个连续动画描述
-// 使用实例的只读属性 totalTime, 用来表示当前实例的总时长。
 t.add({
   el,
   props: {

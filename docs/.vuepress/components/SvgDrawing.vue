@@ -14,7 +14,7 @@
   </section>
 </template>
 <script>
-import Totalizer from "totalizer";
+import Totalizer from '../../src/Totalizer';
 
 export default {
   data() {
@@ -23,16 +23,16 @@ export default {
   mounted() {
     const el = this.$refs.path;
     const totalLen = el.getTotalLength();
-    el.setAttribute("stroke-dasharray", totalLen);
+    el.setAttribute('stroke-dasharray', totalLen);
     const t = new Totalizer();
     t.add({
       el,
       props: {
         strokeDashoffset: [totalLen, 0],
       },
-      duration: 2000,
-      delay: 300,
-      endDelay: 300,
+      duration: 1600,
+      delay: 200,
+      endDelay: 200,
     });
     t.loop().alternate().play();
   },
@@ -70,4 +70,3 @@ svg {
   max-width: 60%;
 }
 </style>>
-

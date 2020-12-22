@@ -1,6 +1,5 @@
-# SVG动画
-
-## 路径绘制
+# SVG Animation
+## SVG Path Drawing
 
 <ClientOnly>
   <SvgDrawing/>
@@ -22,7 +21,7 @@ t.add({
 });
 t.loop().alternate().play();
 ```
-## 路径变化
+## SVG Path Changing
 
 <ClientOnly>
   <SvgChanging/>
@@ -44,7 +43,7 @@ t.add({
 t.loop().alternate().play();
 ```
 
-## 路径位移
+## SVG Path Moving
 
 <ClientOnly>
   <SvgMoving/>

@@ -14,7 +14,7 @@
   </section>
 </template>
 <script>
-import Totalizer from "totalizer";
+import Totalizer from '../../src/Totalizer';
 
 export default {
   data() {
@@ -34,7 +34,7 @@ export default {
         cy: (process) => path.getPointAtLength(totalLen * process).y,
       },
       delay: 0,
-      duration: 5000,
+      duration: 2000,
       loop: true,
     });
     t.loop().play();
@@ -72,4 +72,3 @@ svg {
   padding-left:80px;
 }
 </style>>
-

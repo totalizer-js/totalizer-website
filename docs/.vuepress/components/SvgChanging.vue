@@ -14,7 +14,7 @@
   </section>
 </template>
 <script>
-import Totalizer from "totalizer";
+import Totalizer from '../../src/Totalizer';
 
 export default {
   data() {
@@ -26,8 +26,8 @@ export default {
       el: document.getElementById('svgPath'),
       props: {
         d: [
-          "M70 24 L119.574 60.369 L100.145 117.631 L50.855 101.631 L3.426 54.369z",
-          "M70 6 L136.574 54.369 L89.145 100.631 L39.855 117.631 L20.426 60.369z",
+          'M70 24 L119.574 60.369 L100.145 117.631 L50.855 101.631 L3.426 54.369z',
+          'M70 6 L136.574 54.369 L89.145 100.631 L39.855 117.631 L20.426 60.369z',
         ],
       },
       duration: 1000,
@@ -67,4 +67,3 @@ svg {
   width: 100%;
 }
 </style>>
-

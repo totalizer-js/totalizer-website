@@ -1,4 +1,4 @@
-# 交错动画
+# Staggering
 
 Demo
 
@@ -7,10 +7,8 @@ Demo
 </ClientOnly>
 
 ``` javascript
-// 创建一个动画迭代器
 const t = new Totalizer();
 
-// 添加多个动画描述
 const els = document.querySelectorAll("#ul li");
 els.forEach((el, i) => {
   t.add({
@@ -25,6 +23,5 @@ els.forEach((el, i) => {
   });
 });
 
-// 设置为循环，往返，并开始播放
 t.loop().alternate().play();
 ```

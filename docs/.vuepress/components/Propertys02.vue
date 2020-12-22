@@ -74,7 +74,7 @@
   </div>
 </template>
 <script>
-import Totalizer from "totalizer";
+import Totalizer from '../../src/Totalizer';
 
 export default {
   data() {
@@ -96,7 +96,7 @@ export default {
       props: {
         scale: [1, 2],
       },
-      delay:250,
+      delay: 250,
       duration: 500,
     });
 
@@ -105,7 +105,7 @@ export default {
       props: {
         scale: [2, 1],
       },
-      delay:750,
+      delay: 750,
       duration: 500,
     });
 
@@ -114,12 +114,10 @@ export default {
       props: {
         translateY: [0, 200],
       },
-      delay:1000,
+      delay: 1000,
       duration: 750,
-      easing: "easeOutBounce",
+      easing: 'easeOutBounce',
     });
-
-    
 
     t.add({
       el: this.$refs.line,
@@ -143,7 +141,7 @@ export default {
       props: {
         width: [0, 200],
       },
-      delay:250,
+      delay: 250,
       duration: 500,
     });
 
@@ -152,7 +150,7 @@ export default {
       props: {
         width: [0, 200],
       },
-      delay:750,
+      delay: 750,
       duration: 500,
     });
 
@@ -161,7 +159,7 @@ export default {
       props: {
         width: [0, 300],
       },
-      delay:1000,
+      delay: 1000,
       duration: 750,
     });
 
@@ -230,4 +228,3 @@ text {
   border-radius: 4px;
 }
 </style>>
-

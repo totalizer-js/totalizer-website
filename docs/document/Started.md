@@ -1,45 +1,52 @@
- # 快速开始
+# Started
 
-Demo
+## Installation
+
+
+``` shell
+npm i -S totalizer
+```
+
+
+## Usage
 
 <ClientOnly>
   <Started/>
 </ClientOnly>
 
-引入
+Import totalizer
 
 ``` javascript
 import Totalizer from 'totalizer';
 ```
 
-创建一个 Totalizer 实例
+Create a Totalizer instance
 
 ``` javascript
-conat t = new Totalizer();
+conat animation = new Totalizer();
 ```
 
-添加一个动画描述到实例中
+Add an animation description
 
 ``` javascript
-t.add({
-  el: document.getElementById("div"),   // 动画节点
+animation.add({
+  el: document.getElementById("div"),   // the target node
   props: {
-    translateX: [0, 300],               // 偏移量从 0px 变为 200px
-    scale: [0.4, 1],                    // 缩放 0.4 倍变为 1 倍
-    rotate: [0, 720],                   // 旋转 0deg 变为 720deg
-    background: ["#ddd", "#08c"],       // 背景色从 #ddd 变为 #08c 
+    translateX: [0, 300],               // translateX from '0px' to '300px'
+    scale: [0.4, 1],                    // scale from 0.4 to 1 
+    rotate: [0, 720],                   // rotate from 0deg to 720deg
+    background: ["#ddd", "#08c"],       // background from '#ddd' to '#08c' 
   },
-  delay: 300,                           // 播放延时
-  endDelay: 300,                        // 结束延时
-  duration: 2000,                       // 动画持续时长
-  easing: 'easeOutBounce',              // 动画缓动效果
-});
+  delay: 300,                           // delay
+  endDelay: 300,                        // endDelay
+  duration: 2000,                       // duration
+  easing: 'easeOutBounce',              // easing
+})
 ```
 
-控制动画实例
+Control the animation instance
 
 ``` javascript
-// 设置为循环，往返，并开始播放
-t.loop().alternate().play();
+animation.loop().alternate().play();
 ```
 

@@ -1,7 +1,7 @@
 <template>
   <section class="demo">
     <h2>Staggering</h2>
-    <ul id="ul">
+    <ul id="ul" ref="ul">
       <li></li>
       <li></li>
       <li></li>
@@ -26,7 +26,7 @@
   </section>
 </template>
 <script>
-import Totalizer from "totalizer";
+import Totalizer from '../../src/Totalizer';
 
 export default {
   data() {
@@ -37,17 +37,17 @@ export default {
     const t = new Totalizer();
 
     // 添加多个动画描述
-    const els = document.querySelectorAll("#ul li");
+    const els = this.$refs.ul.querySelectorAll('li');
     els.forEach((el, i) => {
       t.add({
-        el: el,
+        el,
         props: {
           scale: [0.5, 1],
           rotate: [0, 360],
-          background: ["#ddd", "#08c"],
+          background: ['#ddd', '#08c'],
         },
         duration: 500,
-        delay: (parseInt(i/5) + (i % 5)) * 200,
+        delay: (parseInt(i / 5, 10) + (i % 5)) * 214,
       });
     });
 
@@ -102,4 +102,3 @@ li {
   box-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 </style>>
-

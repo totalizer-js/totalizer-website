@@ -1,9 +1,9 @@
-# 介绍
+# Introduction
 
+::: danger
+The current version is in beta, and the official version is about to be released.
+:::
 
-Totalizer JS 提供一种简单的DOM、SVG动画描述方式，以及一个管理多个动画描述的机制。它的诞生初衷是为了构建复杂动画交互组件，提供一个核心的动画渲染和管理的抽象层。
+Totalizer JS provides a simple DOM & SVG animation description, and a mechanism for managing multiple animation descriptions. It was originally designed to create a core animation abstraction layer for building complex animation interaction components.
 
-什么时候使用 Totalizer JS？
-
-* 制作简单的补间动画，关键帧动画等。
-* 作为构建复杂动画组件的核心部分。例如，视差滚动，路径绘制，交错动画等。
+![gif](../.vuepress/public/show.gif)

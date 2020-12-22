@@ -2,7 +2,7 @@
   <div>
     <section class="demo">
       <h2>Sample Animation</h2>
-      <div id="div"></div>
+      <div ref="div" id="div"></div>
     </section>
     <section class="timeline">
       <svg viewBox="0 0 1000 250">
@@ -37,7 +37,7 @@
   </div>
 </template>
 <script>
-import Totalizer from "totalizer";
+import Totalizer from '../../src/Totalizer';
 
 export default {
   data() {
@@ -47,14 +47,14 @@ export default {
     const t = new Totalizer();
 
     t.add({
-      el: document.getElementById("div"),
+      el: this.$refs.div,
       props: {
         translateX: [0, 270],
       },
       delay: 500,
       endDelay: 500,
       duration: 1000,
-      easing: "easeOutBounce",
+      easing: 'easeOutBounce',
     });
 
     t.add({
@@ -132,4 +132,3 @@ text {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 </style>>
-

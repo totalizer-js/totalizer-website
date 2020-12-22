@@ -2,11 +2,11 @@
   <section class="demo">
     <h2>Continuous</h2>
     <div id="shadow"></div>
-    <div id="div"></div>
+    <div ref="div" id="div"></div>
   </section>
 </template>
 <script>
-import Totalizer from "totalizer";
+import Totalizer from '../../src/Totalizer';
 
 export default {
   data() {
@@ -15,7 +15,7 @@ export default {
   mounted() {
     // 创建一个动画迭代器
     const t = new Totalizer();
-    const el = document.getElementById("div");
+    const el = this.$refs.div;
 
     // 添加多个连续动画描述
     // 使用实例的只读属性 totalTime, 用来表示当前实例的总时长。
@@ -25,7 +25,6 @@ export default {
         translateX: [0, 280],
       },
       duration: 500,
-      delay: 300,
     });
     t.add({
       el,
@@ -34,7 +33,7 @@ export default {
       },
       duration: 500,
       delay: t.totalTime,
-      easing: "easeOutBounce",
+      easing: 'easeOutBounce',
     });
     t.add({
       el,
@@ -105,4 +104,3 @@ h2 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 </style>>
-

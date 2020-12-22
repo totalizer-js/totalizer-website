@@ -1,4 +1,4 @@
-# 视差动画
+# Parallax
 
 Demo
 
