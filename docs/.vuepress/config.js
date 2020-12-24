@@ -32,7 +32,8 @@ module.exports = {
                                 '',
                                 'Started',
                                 'Describe',
-                                'Control'
+                                'Control',
+                                'Properties'
                             ]
                         },
                         {
@@ -68,7 +69,8 @@ module.exports = {
                                 '',
                                 'Started',
                                 'Describe',
-                                'Control'
+                                'Control',
+                                'Properties'
                             ]
                         },
                         {

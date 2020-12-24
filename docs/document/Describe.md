@@ -73,6 +73,7 @@ t.add({
 ## API
 
 
+
 ### el
 
 Type : `DOM`,`SVG`
@@ -103,3 +104,40 @@ Type : `Number`
 
 Type : `String`,`Function`
 
+
+<ClientOnly>
+  <Eases/>
+</ClientOnly>
+
+#### Default Easing
+
+`linear`
+#### Availabe Easings
+
+`ease` + `[Mode]` + `[EaseName]`
+
+Mode:
+* In
+* Out
+* InOut
+* OutIn
+
+EaseName:
+
+* Quad
+* Cubic
+* Quart
+* Quint
+* Sine
+* Expo
+* Circ
+* Back
+* Bounce
+
+CODE EXAMPLE
+
+``` JSON
+{
+  easing: 'easeInOutCirc'
+}
+```
